@@ -1,0 +1,24 @@
+@architectureBaseUrl = https://localhost:5001
+@middlewareBaseUrl = https://localhost:5002
+
+### Architecture sample: list orders
+GET {{architectureBaseUrl}}/orders
+Accept: application/json
+
+### Architecture sample: create order
+POST {{architectureBaseUrl}}/orders
+Content-Type: application/json
+
+{
+  "orderNumber": "ORD-1003",
+  "customerName": "Adventure Works",
+  "totalAmount": 199.95
+}
+
+### Architecture sample: singleton clock endpoint
+GET {{architectureBaseUrl}}/diagnostics/time
+Accept: application/json
+
+### Middleware sample: ping endpoint
+GET {{middlewareBaseUrl}}/api/ping
+Accept: application/json
