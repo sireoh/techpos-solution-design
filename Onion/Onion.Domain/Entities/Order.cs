@@ -9,6 +9,7 @@ namespace Onion.Domain.Entities
         public Guid Id { get; set; }
         public string CustomerName { get; set; }
         public decimal TotalAmount { get; set; }
+        public string Status { get; set; } = "Pending";
 
         /// <summary>
         /// Initializes a new instance of the Order class with
