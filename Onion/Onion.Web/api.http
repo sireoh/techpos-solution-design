@@ -1,0 +1,13 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+# api.http
+
+### Variables
+@hostname = localhost
+@port = 7020
+@host = https://{{hostname}}:{{port}}
+
+### Test the Create Order Endpoint
+# Note: Since your controller parameters (customerName, totalAmount) 
+# do not have a [FromBody] attribute, ASP.NET Core expects them in the query string.
+POST {{host}}/api/orders?customerName=Alice&totalAmount=150.50
+Accept: application/json
