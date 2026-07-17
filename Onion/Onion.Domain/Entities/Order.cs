@@ -11,7 +11,8 @@ namespace Onion.Domain.Entities
         public decimal TotalAmount { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the Order class with the specified customer name and total amount.
+        /// Initializes a new instance of the Order class with
+        /// the specified customer name and total amount.
         /// </summary>
         /// <param name="customerName"></param>
         /// <param name="totalAmount"></param>
